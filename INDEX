@@ -1,0 +1,8 @@
+./libgit2-1.0.1: libgit2 source. You will need CMake to build.
+We suggest you build it on the system you plan to use it on and with the following arguments:
+"-DBUILD_CLAR:BOOL=OFF -DTHREADSAFE:BOOL=OFF -DUSE_SSH:BOOL=OFF -DUSE_NTLMCLIENT:BOOL=OFF
+-DUSE_BUNDLED_ZLIB:BOOL=ON -DCMAKE_C_FLAGS="-m32" -DCMAKE_EXE_LINKER_FLAGS="-m32" -DCMAKE_BUILD_TYPE=Release --build"
+Note: on my system (PaX) I had to edit generated Makefiles to get a
+cross-compile to i386 to work. Good luck.
+
+./libgit2-1.0.1/build: libgit2 binaries in Linux i686 ELF format.
